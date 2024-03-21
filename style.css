@@ -1,133 +1,124 @@
-
-Huy
-Huy Khanh
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    font-family: Arial, sans-serif;
-    background: color #f2f2f2;
+    background-color: #D5D5D5;
+    font-family: system-ui;
+}
+.container{
+    background-color: #E9E7EA;
+    width:1000px;
+    max-width: 100%;
+    margin:auto;
+    padding:50px;
+    box-shadow: 0 10px 50px #858585;
     display: grid;
-    grid-template-columns: 70% 30%;
-    max-width: 1200px;
-    margin: 0 auto;
+   grid-template-columns: 35% 60%;
+   column-gap: 5%; 
+   row-gap: 30px;
 }
 
-header{
-    background-color: #c7cc19;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    grid-column: 1/ span 2;
+.avatar img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
-nav {
-    background-color: #ffa486;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    grid-column: 1 / span 2;
-}  
-
-nav ul{
+.avatar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.name{
+    padding-left: 30px;
+    border-left:1px solid #000;
+}
+.name h1{
+    font-weight: 300;
+    font-size: xxx-large;
+    margin:0px 0 5px ;
+}
+.name .specialize{
+    margin:0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.name .contact{
+    padding:0;
     list-style: none;
 }
-
-nav ul li{
-    display: inline;
+.name .contact span{
+    display: inline-block;
+    background-color: #000;
+    width:20px;
+    height:20px;
+    color:#fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: small;
     margin-right: 20px;
 }
-.product-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    grid-column: 1;
+.name .contact li{
+    padding:5px 0;
+    transform: translate(-40px);
+    background-color: #E9E7EA;
 }
-.product-card{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px; 
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
-.product-card img{
-    max-width: 100%;
-    height: auto;
-}
-.sidebar{
-    background-color: #199cff;
-    color:#fff;
-    padding: 10px;
-    grid-column: 2;
-}
-.social-icons{
-    margin-top: 20px;
-}
-.social-icons a{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-}
+.info ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    line-height: 30px;
+} 
 
-@media (max-width:576px){
-    .product-list{
-        grid-template-columns: 1fr;
-    }
-    .product-card{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .sidebar{
-        grid-column: 1 / span 2;
-    }
-    .footer{
-        grid-template-columns: 1fr;
-    }
+h2{
+    padding:0;
+    margin: 0 0 20px 0;
 }
-
-.footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    grid-column: 1 / span 2 ;
-    display: grid;
+.intro{
+    padding-left: 30px;
+    border-left: 1px solid #000;
+    text-align: justify;
 }
-.footer-item{
-    padding: 10px;
+.experience{
+    text-align: right;
 }
-@media (min-width:768px ) {
-    .footer{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
+.experience h4{
+    margin:20px 0 10px;
 }
-.button{
-    background-color: #04AA6D;
-    border: none;
-    color:white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+.skills{
+    margin-top:  50px;
 }
-.button1{
-    border-radius: 2px;
+.experience ul{
+    padding:0;
+    margin: 0;
+list-style: none;
 }
-.button3{
-    border-radius: 8px;
+.experience li{
+    padding:10px 0;
 }
-.button4{
-    border-radius: 12px;
+.project{
+    padding-left: 30px;
+    text-align: justify;
+    border-left: 1px solid #000;
 }
-.button5{
+.project h4{
+    margin:20px 0 10px;
+}
+.project .web{
+    color: #0c7373;
+    padding:10px 0;
+}
+.project .location{
+    font-weight: 500;
+    padding-bottom:10px;
+}
+.project .item{
+    position: relative;
+}
+.project .item::before{
+    position: absolute;
+    width:13px;
+    height: 13px;
+    background-color: #000;
+    content: '';
     border-radius: 50%;
+    left: -37px;
 }
